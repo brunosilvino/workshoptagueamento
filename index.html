@@ -14,7 +14,12 @@
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 
-		gtag('config', 'G-GX41BSHS2R', { 'cookie_flags': 'SameSite=None;Secure', 'cookie_domain': 'brunosilvino.github.io' });
+		// gtag('config', 'G-GX41BSHS2R', { 'cookie_flags': 'SameSite=None;Secure', 'cookie_domain': 'brunosilvino.github.io' });
+		gtag('config', 'G-GX41BSHS2R', { 
+			'cookie_flags': 'SameSite=None;Secure', 
+			'cookie_domain': 'localhost',
+			'debug_mode': true
+		});
 	</script>
 	<title>Martech Cachorro</title>
 	<meta charset="utf-8" />
@@ -30,7 +35,7 @@
 	<div id="wrapper">
 
 		<!-- Intro -->
-		<section class="intro">
+		<section id="header" class="intro">
 			<header>
 				<h1>Martech</h1>
 				<p>Performance</p>
@@ -41,7 +46,7 @@
 			</header>
 			<div class="cachorro-gato content">
 				<ul class="botoes-intro actions">
-					<li><a href="https://anasoamaral.github.io/tagueamento/index.html" class="button primary large"
+					<li><a href="/" class="button primary large"
 							id="botao-cachorro">Cachorro</a></li>
 					<li><a href="https://anasoamaral.github.io/tagueamento/index pink.html" class="button large"
 							id="botao-gato">Gato</a></li>
@@ -49,7 +54,7 @@
 			</div>
 		</section>
 
-		<!-- Section -->
+		<!-- Section -->	
 		<section id="first">
 			<header>
 				<h2>BI, muitos dados e muito tagueamento</h2>

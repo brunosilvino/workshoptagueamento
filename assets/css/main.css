@@ -103,6 +103,10 @@ input, select, textarea {
 	appearance: none;
 }
 
+a, button {
+	cursor: pointer;
+}
+
 /* Basic */
 
 	@-ms-viewport {
