@@ -10,14 +10,13 @@
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GX41BSHS2R"></script>
 	<script>
+		const env = location.hostname.includes('localhost') ? 'dev' : 'prd'
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-
-		// gtag('config', 'G-GX41BSHS2R', { 'cookie_flags': 'SameSite=None;Secure', 'cookie_domain': 'brunosilvino.github.io' });
 		gtag('config', 'G-GX41BSHS2R', { 
 			'cookie_flags': 'SameSite=None;Secure', 
-			'cookie_domain': 'localhost',
+			'cookie_domain':  (env === 'dev') ? 'localhost' : 'brunosilvino.github.io',
 			'debug_mode': true
 		});
 	</script>

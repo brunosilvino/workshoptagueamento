@@ -168,7 +168,7 @@ class Tracker {
 const ga4 = new Tracker('G-GX41BSHS2R')  // Substitua pelo seu Measurement ID do GA4
 const taggingAPI = new TaggingAPI(
     // 'https://tagging-api-azvnjols4q-rj.a.run.app',
-    'http://localhost:8080',
+    (env === 'dev') ? 'http://localhost:8080' : 'https://tagging-api-azvnjols4q-rj.a.run.app',
     '7IrA3QyPTJaCUe1edtAh3w', // Substitua pelo seu API Secret da Tagging API
     'G-GX41BSHS2R',          // Substitua pelo seu Measurement ID do GA4
     'NP8FIX4xTTOJazXz6CPjvw'  // Substitua pelo seu Measurement Protocol Secret do GA4
